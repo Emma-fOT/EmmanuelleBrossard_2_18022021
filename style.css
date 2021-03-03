@@ -1,0 +1,407 @@
+/* Global */
+
+body,
+button,
+input {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+h1,
+h2,
+h4 {
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+#hebergements,
+#popularity,
+footer {
+  background-color: #f2f2f2;
+}
+
+.link__notmarked {
+  text-decoration: none;
+  color: black;
+}
+
+/* Page */
+
+#page {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+nav li {
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+}
+
+#header__nav__subscribe {
+  color: #0065fc;
+  font-weight: bold;
+}
+
+.is_active a {
+  border-top: 2px solid #0065fc;
+  color: #0065fc;
+}
+
+nav a:hover {
+  border-top: 2px solid #0065fc;
+  border-bottom: 2px solid #0065fc;
+  color: #0065fc;
+}
+
+/* Search */
+
+#search {
+  margin-bottom: 50px;
+}
+
+#search__form {
+  display: flex;
+}
+
+#search__form span {
+  background-color: #f2f2f2;
+  border-style: none;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-weight: bold;
+}
+
+#search__form input {
+  padding: 10px;
+  border-style: solid;
+  border-color: #f2f2f2;
+  border-width: 1px;
+  font-weight: bold;
+}
+
+#search__form button {
+  background-color: #0065fc;
+  color: white;
+  border-style: none;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: bold;
+}
+
+#search__form button:hover {
+  color: black;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#search__form button:hover:after {
+  content: " » ";
+  transition: all 0.5s;
+}
+
+#search__filtres {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+#search__filtres > p {
+  margin-right: 20px;
+}
+
+.search__filtres__button {
+  margin: 20px;
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #f2f2f2;
+  border-radius: 20px;
+  padding-top: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  padding-right: 10px;
+  height: 35px;
+  font-weight: bold;
+}
+
+.fa-money-bill-wave,
+.fa-child,
+.fa-heart,
+.fa-dog {
+  color: #0065fc;
+  background-color: #deebff;
+  border-radius: 20px;
+  padding: 10px;
+  width: 15px;
+  height: 15px;
+  margin-top: -2px;
+  margin-left: -2px;
+  text-align: center;
+  line-height: 15px;
+}
+
+.search__filtres__button:hover {
+  border-color: #0065fc;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.search__filtres__button:hover .fas {
+  color: #deebff;
+  background-color: #0065fc;
+  transition: all 0.5s;
+}
+
+.fa-info {
+  color: #0065fc;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #f2f2f2;
+  border-radius: 20px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+}
+
+/* Main panel */
+
+#mainpanel {
+  display: flex;
+}
+
+/* Hebergements */
+
+#hebergements {
+  width: 66.6%;
+  margin-right: 2%;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+#hebergement__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hebergement__card__link {
+  width: 30%;
+}
+
+.hebergement__card {
+  padding: 2%;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hebergement__card:hover,
+.popularity__card:hover,
+.activites__card:hover {
+  box-shadow: inset 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hebergement__card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.hebergement__card h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.hebergement__card p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+#hebergements > p > a {
+  font-weight: bold;
+}
+
+.fa-star--grey {
+  color: #f2f2f2;
+}
+
+.fa-star--blue {
+  color: #0065fc;
+}
+
+/* Popularity */
+
+#popularity {
+  width: 33.3%;
+  margin-left: 2%;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+#popularity__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popularity__card {
+  display: flex;
+  width: 98%;
+  height: 160px;
+  padding: 1%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#popularity__cards__card1,
+#popularity__cards__card2 {
+  margin-bottom: 10%;
+}
+
+.popularity__card img {
+  width: 130px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.popularity__card h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.popularity__card p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.popularity__bloc {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Activites */
+
+#activites {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#activites__cols {
+  display: flex;
+  justify-content: space-between;
+}
+
+#activites__cols__col2,
+#activites__cols__col4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.activites__col {
+  width: 22%;
+}
+
+.activites__cardbig,
+.activites__cardmid,
+.activites__cardsmall {
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.activites__cardbig img,
+.activites__cardmid img,
+.activites__cardsmall img {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.activites__cardbig img {
+  height: 450px;
+}
+
+.activites__cardmid img {
+  height: 200px;
+}
+
+.activites__cardsmall img {
+  height: 150px;
+}
+
+#activites h4 {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__col {
+  width: 33.3%;
+  padding-left: 5%;
+}
+
+.footer__col ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer__col li {
+  text-decoration: none;
+}
+
+.footer__col h3 {
+  font-weight: bold;
+}
+
+.footer__col a:hover {
+  font-weight: bold;
+}
