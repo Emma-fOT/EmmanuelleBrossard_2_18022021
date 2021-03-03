@@ -17,58 +17,65 @@
   </head>
 
   <body>
-    <div id="page">
+    <div class="page">
+      <!--HEADER-->
       <header>
         <img src="images/logo/Reservia.svg" alt="Logo de Réservia" />
-        <nav id="header__nav">
+        <nav class="header__nav">
           <ul>
             <li class="is_active"><a href="#hebergements">Hébergements</a></li>
             <li><a href="#activites">Activités</a></li>
-            <li><a id="header__nav__subscribe" href="#">S'inscrire</a></li>
+            <li>
+              <a class="header__nav__subscribe is_bold" href="#">S'inscrire</a>
+            </li>
           </ul>
         </nav>
       </header>
 
       <main>
-        <section id="search">
+        <!--SEARCH-->
+        <section class="search">
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
           <h3>En plein centre-ville ou en pleine nature</h3>
-          <form id="search__form">
+          <form class="search__form">
             <span class="fas fa-map-marker-alt"></span>
             <input
+              class="is_bold"
               type="search"
               name="search__field"
               value="Marseille, France"
             />
-            <button type="submit">Rechercher</button>
+            <button class="is_bold" type="submit">Rechercher</button>
           </form>
-          <div id="search__filtres">
-            <p>Filtres</p>
-            <button class="search__filtres__button">
-              <span class="fas fa-money-bill-wave"></span> Économique
+          <div class="search__filtres">
+            <p class="is_bold">Filtres</p>
+            <button class="search__filtres__button is_round is_bold">
+              <span class="fas fa-money-bill-wave is_round"></span> Économique
             </button>
-            <button class="search__filtres__button">
-              <span class="fas fa-child"></span> Familial
+            <button class="search__filtres__button is_round is_bold">
+              <span class="fas fa-child is_round"></span> Familial
             </button>
-            <button class="search__filtres__button">
-              <span class="fas fa-heart"></span> Romantique
+            <button class="search__filtres__button is_round is_bold">
+              <span class="fas fa-heart is_round"></span> Romantique
             </button>
-            <button class="search__filtres__button">
-              <span class="fas fa-dog"></span> Animaux autorisés
+            <button class="search__filtres__button is_round is_bold">
+              <span class="fas fa-dog is_round"></span> Animaux autorisés
             </button>
           </div>
           <p>
-            <span class="fas fa-info"></span> Plus de 500 logements sont
-            disponibles dans cette ville
+            <span class="fas fa-info is_round"></span> Plus de 500 logements
+            sont disponibles dans cette ville
           </p>
         </section>
 
-        <div id="mainpanel">
-          <section id="hebergements">
-            <h2 id="hebergements__header">Hébergements à Marseille</h2>
-            <div id="hebergement__cards">
+        <div class="mainpanel">
+          <!--HEBERGEMENTS-->
+          <section id="hebergements" class="hebergements is_grey is_round">
+            <h2 class="hebergements__header">Hébergements à Marseille</h2>
+            <div class="hebergement__cards">
+              <!--Hebergement card 1-->
               <a class="hebergement__card__link link__notmarked" href="#">
-                <div id="hebergement__cards__card1" class="hebergement__card">
+                <div class="card hebergement__card">
                   <img
                     src="images/hebergements/marseille-auberge-la-cannebiere.jpg"
                     alt="Une chambre avec des lits superposés et deux fenêtres donnant sur la rue"
@@ -84,8 +91,9 @@
                   </p>
                 </div>
               </a>
+              <!--Hebergement card 2-->
               <a class="hebergement__card__link link__notmarked" href="#">
-                <div id="hebergement__cards__card2" class="hebergement__card">
+                <div class="card hebergement__card">
                   <img
                     src="images/hebergements/marseille-hotel-du-port.jpg"
                     alt="Une chambre deux lits simples avec une fenêtre"
@@ -101,8 +109,9 @@
                   </p>
                 </div>
               </a>
+              <!--Hebergement card 3-->
               <a class="hebergement__card__link link__notmarked" href="#">
-                <div id="hebergement__cards__card3" class="hebergement__card">
+                <div class="card hebergement__card">
                   <img
                     src="images/hebergements/marseille-hotel-les-mouettes.jpg"
                     alt="Une chambre avec un lit simple et un dressing"
@@ -118,8 +127,9 @@
                   </p>
                 </div>
               </a>
+              <!--Hebergement card 4-->
               <a class="hebergement__card__link link__notmarked" href="#">
-                <div id="hebergement__cards__card4" class="hebergement__card">
+                <div class="card hebergement__card">
                   <img
                     src="images/hebergements/marseille-hotel-de-la-mer.jpg"
                     alt="Une chambre à dominante bleue turquoise avec un lit double et un tableau de la mer au dessus du lit"
@@ -135,8 +145,9 @@
                   </p>
                 </div>
               </a>
+              <!--Hebergement card 5-->
               <a class="hebergement__card__link link__notmarked" href="#">
-                <div id="hebergement__cards__card5" class="hebergement__card">
+                <div class="card hebergement__card">
                   <img
                     src="images/hebergements/marseille-auberge-le-panier.jpg"
                     alt="Une chambre avec plusieurs lits superposés en bois disposant de rideaux"
@@ -152,8 +163,9 @@
                   </p>
                 </div>
               </a>
+              <!--Hebergement card 6-->
               <a class="hebergement__card__link link__notmarked" href="#">
-                <div id="hebergement__cards__card6" class="hebergement__card">
+                <div class="card hebergement__card">
                   <img
                     src="images/hebergements/marseille-hotel-chez-amina.jpg"
                     alt="Une chambre avec deux lits doubles, une fenêtre et un bureau"
@@ -170,17 +182,19 @@
                 </div>
               </a>
             </div>
-            <p><a class="link__notmarked" href="#">Afficher plus</a></p>
+            <p><a class="link__notmarked is_bold" href="#">Afficher plus</a></p>
           </section>
 
-          <aside id="popularity">
-            <div id="popularity__header">
+          <!--POPULARITY-->
+          <aside class="popularity is_grey is_round">
+            <div class="popularity__header">
               <h2>Les plus populaires</h2>
               <i class="fas fa-chart-line"></i>
             </div>
-            <div id="popularity__cards">
+            <div class="popularity__cards">
+              <!--Popularity card 1-->
               <a class="popularity__card__link link__notmarked" href="#">
-                <div id="popularity__cards__card1" class="popularity__card">
+                <div class="card popularity__card popularity__cards__card1">
                   <img
                     src="images/hebergements/marseille-hotel-le-soleil-du-matin.jpg"
                     alt="Une chambre verte avec lit double, plusieurs miroirs et une porte-fenêtre"
@@ -200,8 +214,9 @@
                   </div>
                 </div>
               </a>
+              <!--Popularity card 2-->
               <a class="popularity__card__link link__notmarked" href="#">
-                <div id="popularity__cards__card2" class="popularity__card">
+                <div class="card popularity__card popularity__cards__card2">
                   <img
                     src="images/hebergements/marseille-au-coeur-de-l-eau-chambres-d-hotes.jpg"
                     alt="Une chambre de style industriel avec un lit double et une fenêtre"
@@ -221,8 +236,9 @@
                   </div>
                 </div>
               </a>
+              <!--Popularity card 3-->
               <a class="popularity__card__link link__notmarked" href="#">
-                <div id="popularity__cards__card3" class="popularity__card">
+                <div class="card popularity__card">
                   <img
                     src="images/hebergements/marseille-hotel-tout-bleu-et-blanc.jpg"
                     alt="Une chambre parquetée avec un lit double et des tables de nuit"
@@ -246,14 +262,13 @@
           </aside>
         </div>
 
-        <section id="activites">
-          <h2 id="activites__header">Activités à Marseille</h2>
-          <div id="activites__cols">
+        <!--ACTIVITES-->
+        <section id="activites" class="activites">
+          <h2 class="activites__header">Activités à Marseille</h2>
+          <div class="activites__cols">
+            <!--Activite card 1-->
             <a class="link__notmarked activites__col" href="#">
-              <div
-                id="activites__cols__col1"
-                class="activites__cardbig activites__card"
-              >
+              <div class="card activites__card activites__cardXL">
                 <img
                   src="images/activites/marseille-vieux-port.jpg"
                   alt="Le port de Marseille avec des bateaux amarrés"
@@ -261,12 +276,10 @@
                 <h4>Vieux port</h4>
               </div>
             </a>
-            <div id="activites__cols__col2" class="activites__col">
+            <div class="activites__col activites__cols__col2">
+              <!--Activite card 2-->
               <a class="link__notmarked" href="#">
-                <div
-                  id="activites__cols__col2__card1"
-                  class="activites__cardmid activites__card"
-                >
+                <div class="card activites__card activites__cardL">
                   <img
                     src="images/activites/marseille-fort-de-pomegues.jpg"
                     alt="Le fort de Pomègues au milieu des cailloux"
@@ -274,11 +287,9 @@
                   <h4>Fort de Pomègues</h4>
                 </div>
               </a>
+              <!--Activite card 3-->
               <a class="link__notmarked" href="#">
-                <div
-                  id="activites__cols__col2__card2"
-                  class="activites__cardsmall activites__card"
-                >
+                <div class="card activites__card activites__cardS">
                   <img
                     src="images/activites/marseille-iles-du-frioul.jpg"
                     alt="Une longue vue pointant vers des îles"
@@ -287,11 +298,9 @@
                 </div>
               </a>
             </div>
+            <!--Activite card 4-->
             <a class="link__notmarked activites__col" href="#">
-              <div
-                id="activites__cols__col3"
-                class="activites__cardbig activites__card"
-              >
+              <div class="card activites__card activites__cardXL">
                 <img
                   src="images/activites/marseille-parc-national-des-calanques.jpg"
                   alt="Une vue sur la mer depuis les calanques de Mars"
@@ -299,12 +308,10 @@
                 <h4>Parc National des Calanques</h4>
               </div>
             </a>
-            <div id="activites__cols__col4" class="activites__col">
+            <div class="activites__col activites__cols__col4">
+              <!--Activite card 5-->
               <a class="link__notmarked" href="#">
-                <div
-                  id="activites__cols__col4__card1"
-                  class="activites__cardmid activites__card"
-                >
+                <div class="card activites__card activites__cardM">
                   <img
                     src="images/activites/marseille-notre-dame-de-la-garde.jpg"
                     alt="Une vue sur Notre-Dame-de-la-Garde"
@@ -312,11 +319,9 @@
                   <h4>Notre-Dame-de-la-Garde</h4>
                 </div>
               </a>
+              <!--Activite card 6-->
               <a class="link__notmarked" href="#">
-                <div
-                  id="activites__cols__col4__card2"
-                  class="activites__cardsmall activites__card"
-                >
+                <div class="card activites__card activites__cardM">
                   <img
                     src="images/activites/marseille-parc-longchamp.jpg"
                     alt="Les fontaines du Parc Longchamp"
@@ -329,9 +334,11 @@
         </section>
       </main>
 
-      <footer>
-        <div id="footer__col1" class="footer__col">
-          <h3>A propos</h3>
+      <!--FOOTER-->
+      <footer class="is_grey">
+        <!--Footer col 1-->
+        <div class="footer__col">
+          <h3 class="is_bold">A propos</h3>
           <ul>
             <li>
               <a class="link__notmarked" href="#">Fonctionnement du site</a>
@@ -342,14 +349,13 @@
               >
             </li>
             <li>
-              <a class="link__notmarked" href="#"
-                >Donnéees et confidentialité</a
-              >
+              <a class="link__notmarked" href="#">Données et confidentialité</a>
             </li>
           </ul>
         </div>
-        <div id="footer__col2" class="footer__col">
-          <h3>Nos hébergements</h3>
+        <!--Footer col 2-->
+        <div class="footer__col">
+          <h3 class="is_bold">Nos hébergements</h3>
           <ul>
             <li><a class="link__notmarked" href="#">Charte qualité</a></li>
             <li>
@@ -357,8 +363,9 @@
             </li>
           </ul>
         </div>
-        <div id="footer__col3" class="footer__col">
-          <h3>Assistance</h3>
+        <!--Footer col 3-->
+        <div class="footer__col">
+          <h3 class="is_bold">Assistance</h3>
           <ul>
             <li><a class="link__notmarked" href="#">Centre d'aide</a></li>
             <li><a class="link__notmarked" href="#">Nous contacter</a></li>
