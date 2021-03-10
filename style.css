@@ -427,7 +427,7 @@ footer {
 
 /* Tablets */
 
-@media all and (max-device-width: 980px) {
+@media all and (max-width: 980px) {
   /* Filters */
   .search__filtres {
     display: flex;
@@ -459,7 +459,8 @@ footer {
   }
 
   .popularity__card img {
-    width: 350px;
+    width: 50%;
+    max-width: 350px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
   }
@@ -511,7 +512,7 @@ footer {
 
 /* Smartphone */
 
-@media all and (max-device-width: 480px) {
+@media all and (max-width: 480px) {
   /* Global */
   .page,
   .mainpanel,
@@ -613,7 +614,8 @@ footer {
 
   .search__form input {
     padding: 13px;
-    width: 250px;
+    width: 70%;
+    max-width: 250px;
     font-size: 1.2em;
   }
 
